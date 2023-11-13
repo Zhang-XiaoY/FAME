@@ -2,7 +2,7 @@
 FAME is a fast and low memory cost simulation framework for non-ideal ReRAM-based DNN accelerator.
 
 # Dependencies
-- Python >=3.9
+- Python >=3.8
 - PyTorch >=2.0.1
 - Matplotlib
 
