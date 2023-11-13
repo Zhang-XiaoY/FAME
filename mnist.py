@@ -79,11 +79,12 @@ def main():
     scheduler = lr_scheduler.ConstantLR(optimizer, 0.5, 10)
 
     simple_train(model,
-             optimizer,
-             scheduler,
-             train_set=train_set,
-             test_loader=test_loader,
-             epoch_num=configs.getint('DEFAULT', 'epoch_num'))
+                 optimizer,
+                 scheduler,
+                 train_set=train_set,
+                 test_loader=test_loader,
+                 epoch_num=configs.getint('DEFAULT', 'epoch_num'),
+                device = device)
 
 if __name__ == '__main__':
     main()
