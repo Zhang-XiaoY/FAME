@@ -13,7 +13,7 @@ def smr(ori_model,
         SA0_ratio,
         SA1_ratio,
         device,
-        en_nonidealities=[0,0,0,0,0,0]
+        en_nonidealities=[0,0,0,0,0]
         ):
 
     model = copy.deepcopy(ori_model)
