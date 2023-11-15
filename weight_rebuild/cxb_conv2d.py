@@ -38,7 +38,7 @@ class cxb_conv2d(nn.Conv2d):
         wire_g=3e-4,
         SA0_ratio=0.1,
         SA1_ratio=0.1,
-        en_nonidealities=[0,0,0,0,0,0]
+        en_nonidealities=[0,0,0,0,0]
         ):
         super(cxb_conv2d, self).__init__(in_channels,out_channels,
                 kernel_size,stride,padding,dilation,groups,bias)
