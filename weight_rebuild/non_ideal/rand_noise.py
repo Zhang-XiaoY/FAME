@@ -55,7 +55,7 @@ def rand_noise_gen(
     if en_prog_error:
         normal_noise += program_g/3
 
-    rand_noise=torch.normal(0,abs(normal_noise)) + rtn_noise
+    rand_noise=torch.normal(0,abs(torch.sqrt(normal_noise))) + rtn_noise
     
     rand_noise = (rand_noise - max_g) * (max_w - min_w) / (min_g - max_g) + min_w
 
